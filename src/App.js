@@ -1,26 +1,25 @@
+
 import React from 'react';
-import logo from './logo.svg';
+import Card from "./components/Card";
+import Barbados from "./barbados_beach.jpg";
+import palenque from "./palenque.jpg";
 import './App.css';
 
-function App() {
+const App = () => {
+  const a = "chiapas";
+  const b = "5";
+  const c = "palenque";
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <h1 className = "text-red">hola React</h1>
+    <h2>mi primer sitio hecho con React</h2>
+    <p>loren ipsum </p>
+    <Card image={Barbados} title="Barbados" score= "5" address="playa de barbados" />
+    <Card image={palenque} title={a} score= {b} address= {c} superhost />
     </div>
   );
 }
 
 export default App;
+ 
